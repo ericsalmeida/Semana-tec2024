@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #002502;
+    color: #000000;
+    text-indent: 2cqmax;
+    text-align: justify;
+}
+
+header {
+    background-color: #4CAF50;
+    font-size: 30px;
+    color: white;
+    padding: 50px; /*define a distabcia da borda*/
+    text-align: center;
+}
+
+.imagem-logo{
+    margin-top: 100; /*distancia o elemento da borda superior*/
+    width: 150px;
+    border-radius: 10px;
+    position: absolute; /*tira o elemento do fluxo normal da página*/
+    top: 20px; /*coloca o elemento no topo*/
+    left: 10px; /*coloca o elemento a esqueda*/
+}
+.imagem-logo1{
+    margin: 100; /*distancia o elemento da borda superior*/
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    position:absolute; /*tira o elemento do fluxo normal da página*/
+    top: 40px; /*coloca o elemento no topo*/
+    right: 10px; /*coloca o elemento a esqueda*/
+}
+
+h1 {
+    font-size: 2.5em; /* define tamanho da fonte*/
+}
+
+section {
+    padding: 25px;
+    margin: 20px;
+    background-color: #f0f4f8;
+    border-radius: 10px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.image-container {
+    margin-top: 40px;   /* Margem superior */
+    width: 100%;        /* Ajusta a largura da container para 100% */
+    height: 100vh;      /* Altura total da viewport (ou ajuste conforme necessário) */
+    display: flex;      /* Adiciona flexbox para centralização, se necessário */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    overflow: hidden;   /* Oculta qualquer parte da imagem que exceda o container */
+}
+
+.image-container img {
+    width: 100%;        /* Ajusta a largura da imagem para 100% do container */
+    height: 100%;       /* Ajusta a altura da imagem para 100% do container */
+    object-fit: cover;  /* Preenche a área do container sem distorção */
+}
+
+img {
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#introducao {
+    background-color: #e0f7fa;
+    border-radius: 10px; /*cria bordas arredondadas*/
+    padding: 20px;
+}
+
+.intro-content {
+    display: flex; /*define como um elemento vai ser exibido*/
+    flex-direction: column; /*Agrupa os elementos*/
+    align-items: center;
+}
+
+.imagens-formas {
+    display: flex;
+    justify-content: space-around; /*Alinha os elementos do conteiner*/
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.imagens-formas img {
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.imagens-introducao {
+    display: flex;
+    justify-content: space-around; /*Alinha os elementos do conteiner*/
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.imagens-introducao img {
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#horarioss table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+
+#horarioss table, th, td {
+    border: 1px solid #ccc;
+}
+
+#horarioss th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+#horarioss th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#contato ul {
+    list-style-type: none;
+}
+
+#contato li {
+    padding: 5px 0;
+    text-align: justify;
+}
+
+footer {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.opcoes a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 30px;
+    display: inline-block;
+    text-indent: 2cqmax;
+}
+.opcoes a:hover {
+    color: rgb(0, 62, 116);
+}
+.opcoes a:not(:last-child):after {
+    content: "|";
+    margin: 0 20px;
+    color: #ffffff;
+}
